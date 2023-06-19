@@ -1,0 +1,168 @@
+@import 'normalizes.scss'
+@import 'resets.scss'
+
+$color-blue: #5290EA
+$color-orange: #F28B64
+$color-white: #E2E2E2
+
+*
+  box-sizing: border-box
+
+
+h1,
+h2
+  margin: 0
+
+.container
+  max-width: 1440px
+  margin: 0 auto
+
+.main-section
+  height: 800px
+  padding-top: 16px
+  background: #F0F0F0
+  &__nav-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__content-container
+    display: flex
+  &__first-elipse
+    position: absolute
+    top: 129px
+    right: 34px
+  &__second-elipse
+    position: absolute
+    top: 650px
+    right: -120px
+
+.logo
+  width: 134px
+  height: 69px
+
+.menu
+  &__list
+    display: flex
+  &__list-item:not(:last-child)
+    margin-right: 64px
+  &__link
+    font-size: 18px
+    text-decoration: none
+    color: #000000
+
+.left-wrapper
+  position: relative
+  &__img
+    position: relative
+    z-index: 5
+  &__rectangle_blue,
+  &__rectangle_orange,
+  &__rectangle_white
+    position: absolute
+    height: 220px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 100px
+    width: 565px
+  &__rectangle_blue
+    top: 150px
+    left: -50px
+    background: $color-blue
+    transform: rotate(-64deg)
+    z-index: 2
+  &__rectangle_orange
+    top: 160px
+    left: -30px
+    width: 618px
+    background:  $color-orange
+    transform: rotate(-50.81deg)
+    z-index: 3
+  &__rectangle_white
+    top: 190px
+    left: 10px
+    width: 608px
+    background: $color-white
+    transform: rotate(-36.15deg)
+    z-index: 1
+
+.right-wrapper
+  width: 372px
+  position: absolute
+  top: 150px
+  right: 76px
+  z-index: 5
+  &__icons-box
+    margin-bottom: 1px
+    padding-left: 10px
+  &__title
+    margin-bottom: 5px
+  &__text
+    font-size: 16px
+    margin-bottom: 20px
+
+.icons
+  display: flex
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    border: 1px solid $color-blue
+    border-radius: 50%
+  &__item:not(:last-child)
+    margin-right: 17px
+    i
+      font-size: 21px
+
+.title
+  font-size: 72px
+  position: relative
+  font-weight: bold
+  &__hr
+    width: 65px
+    position: absolute
+    bottom: 0px
+    margin: 0
+    border: none
+    border-top: 1px solid black
+
+.buttons
+  display: inline-flex
+  &__main-btn
+    margin-right: 32px
+    width: 200px
+    height: 60px
+    background: $color-orange
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 100px
+    border: none
+    font-size: 18px
+    color: white
+    font-weight: bold
+  &__icon-btn
+    display: inline-flex
+    align-items: center
+    img
+      margin-right: 12px
+  &__text
+    font-size: 16px
+
+.elipse
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 194px
+  height: 194px
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+  border-radius: 50%
+  &_big
+    width: 282px
+    height: 282px
+  &__substruct
+    width: 129.33px
+    height: 129.33px
+    background: #F0F0F0
+    border-radius: 50%
+    &_big
+      width: 188px
+      height: 188px
